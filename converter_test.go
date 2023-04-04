@@ -3,9 +3,9 @@ package converter_test
 import (
 	"testing"
 	"fmt"
-	"os/exec"
+	//"os/exec"
 	//"log"
-	c "github.com/hindu-muppala/YamlJsonConverter"
+	converter "github.com/hindu-muppala/YamlJsonConverter"
 )
 
 func TestAdd(t *testing.T){
