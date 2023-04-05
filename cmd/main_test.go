@@ -14,12 +14,8 @@ func TestYamlConversion(t *testing.T){
 	cmd3 := exec.Command("go","run","main.go", "-y", not_exit1,arg41)
 	st, err := cmd1.Output()
 	std2,err2:=cmd3.Output()
-	fmt.Print(err)
-	fmt.Print(err2)
-	fmt.Print("let see")
     if err != nil ||  err2!=nil  {
         t.Fatalf("failed")
-        //return
     }
 	if string(st) != "conversion sucessfull" && string(std2)!=not_exit1+" is not exit" {
 		t.Errorf("failed")
