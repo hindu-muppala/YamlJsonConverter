@@ -37,8 +37,5 @@ func TestJsonConversion(t *testing.T){
     }
 	if string(st)!= "conversion sucessfull" && string(std3)!=not_exit+" is not exit"{
 		t.Errorf("failed")
-		fmt.Printf(string(std3))
 	}
-	fmt.Println(string(st))
-	fmt.Println(string(std3))
 }
