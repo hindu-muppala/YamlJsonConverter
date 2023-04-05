@@ -1,0 +1,12 @@
+a: 1
+geeta: My name is geeta
+seeta: My name is seeta
+userA:
+  g:
+    name: hindu
+  job: student
+  name: hindu
+  "true": hello
+  u:
+    name: hindu
+  x: hi
