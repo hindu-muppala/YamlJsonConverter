@@ -14,8 +14,6 @@ func TestYamlConversion(t *testing.T){
 	cmd3 := exec.Command("go","run","main.go", "-y", not_exit1,arg41)
 	st, err := cmd1.Output()
 	std2,err2:=cmd3.Output()
-	fmt.Println(string(st))
-	fmt.Println(string(std2))
 	fmt.Print(err)
 	fmt.Print(err2)
 	fmt.Print("let see")
@@ -38,8 +36,6 @@ func TestJsonConversion(t *testing.T){
 	// if file not exit
 	cmd2 := exec.Command("go","run","main.go", "-j", not_exit,arg4)
 	std3,err3:=cmd2.Output()
-	fmt.Println(string(st))
-	fmt.Println(string(std3))
 	if err != nil ||  err3!=nil  {
         t.Fatalf("failed")
     }
