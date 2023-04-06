@@ -5,16 +5,13 @@ import (
 	"fmt"
 	//"os/exec"
 	//"log"
-	converter "github.com/hindu-muppala/YamlJsonConverter"
+	c "github.com/hindu-muppala/YamlJsonConverter"
 )
 
 func TestAdd(t *testing.T){
-	x:=c.convertJson("./cmd/testfiles/test2.yaml","./cmd/testfiles/test1.json")
-	y:=c.convertYaml("./cmd/testfiles/test.json","./cmd/testfiles/test3.yaml")
+	x:=c.ConvertJson("./cmd/testfiles/testfiles/test2.yaml","./cmd/testfiles/testfiles/test1.json")
+	y:=c.ConvertYaml("./cmd/testfiles/testfiles/test.json","./cmd/testfiles/testfiles/test3.yaml")
 	if x!=0 || y!=0 {
-		t.Errorf("eroor")
-	}else{
-		fmt.Print("conversion successful")
+		t.Errorf("check the file directory")
 	}
-
 }
